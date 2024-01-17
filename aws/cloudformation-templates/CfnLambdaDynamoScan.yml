@@ -1,0 +1,66 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Description": "Template for creating a Lambda function to scan a DynamoDB table",
+  "Resources": {
+    "MyLambdaExecutionRole": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Effect": "Allow",
+              "Principal": {
+                "Service": ["lambda.amazonaws.com"]
+              },
+              "Action": ["sts:AssumeRole"]
+            }
+          ]
+        },
+        "Policies": [
+          {
+            "PolicyName": "LambdaDynamoDBAccessPolicy",
+            "PolicyDocument": {
+              "Version": "2012-10-17",
+              "Statement": [
+                {
+                  "Effect": "Allow",
+                  "Action": ["dynamodb:Scan"],
+                  "Resource": "*"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "MyLambdaFunction": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Handler": "index.lambda_handler",
+        "Role": {
+          "Fn::GetAtt": ["MyLambdaExecutionRole", "Arn"]
+        },
+        "Runtime": "python3.11",
+        "Code": {
+          "ZipFile": {
+            "Fn::Join": ["", [
+              "import boto3\n",
+              "import json\n\n",
+              "def lambda_handler(event, context):\n",
+              "    dynamodb = boto3.resource('dynamodb')\n",
+              "    table = dynamodb.Table('aws-services') \n\n",
+              "    # Execute a scan\n",
+              "    response = table.scan()\n",
+              "    items = response.get('Items', [])\n",
+              "    return {\n",
+              "        'statusCode': 200,\n",
+              "        'body': json.dumps(items)\n",
+              "    }\n"
+            ]]
+          }
+        }
+      }
+    }
+  }
+}

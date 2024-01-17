@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  python-backend:
+    build: .
+    ports:
+      - "5001:5001"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - FLASK_ENV=development
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword  # Replace with your desired root password
+      MYSQL_DATABASE: mydatabase         # Replace with your desired database name
+      MYSQL_USER: myuser                 # Replace with your desired user
+      MYSQL_PASSWORD: mypassword         # Replace with your desired password
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # Mount your SQL dump file
