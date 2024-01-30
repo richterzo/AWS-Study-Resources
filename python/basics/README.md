@@ -1,6 +1,6 @@
-# Python Exercises
+# Python Basics
 
-Benvenuto nella cartella degli esercizi Python! Questa collezione di esercizi è progettata per aiutarti a praticare e consolidare le tue competenze di programmazione in Python attraverso diverse categorie. Ogni sottocartella corrisponde a un argomento specifico, e all'interno di ciascuna troverai una serie di esercizi correlati. Senti libero di esplorare e risolvere gli esercizi in qualsiasi ordine preferisci.
+Benvenuto nella cartella degli esercizi Python Basics! Questa collezione di esercizi è progettata per aiutarti a praticare e consolidare le tue competenze di programmazione in Python attraverso diverse categorie. Ogni sottocartella corrisponde a un argomento specifico, e all'interno di ciascuna troverai una serie di esercizi correlati. Senti libero di esplorare e risolvere gli esercizi in qualsiasi ordine preferisci.
 
 ## Indice degli argomenti
 
