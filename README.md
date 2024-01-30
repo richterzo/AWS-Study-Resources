@@ -22,8 +22,6 @@ Benvenuti nel repository di esercitazioni! Qui troverete una serie di risorse pe
   
 - **Python**: Risorse per l'apprendimento e la pratica di Python nella cartella `/python`.
 
-![Cane](resources/gif/giphyDog.gif)
-
 ## Prerequisiti
 
 - Conoscenze di base di programmazione, preferibilmente in Python.
