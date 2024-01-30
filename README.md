@@ -1,20 +1,28 @@
-Creare un README efficace e attraente per il tuo repository GitHub è un ottimo modo per presentare e organizzare le risorse di studio per una classe che si concentra su AWS, Python e Docker. Ecco un esempio di come potresti strutturare il tuo README:
+# AWS, Docker, Linux, Python - Risorse di Studio
 
----
-
-# AWS, Python e Docker - Risorse di Studio
-
-Benvenuti nel repository delle risorse di studio per la classe su AWS, Python e Docker! Questo repository è una raccolta curata di materiali, esempi di codice, e guide che vi aiuteranno nel vostro percorso di apprendimento.
+Benvenuti nel repository delle risorse di studio per la classe su AWS, Docker, Linux e Python ! Questo repository è una raccolta curata di materiali, esempi di codice, e guide che vi aiuteranno nel vostro percorso di apprendimento.
 
 ## Informazioni sul Corso
 
-Questo corso è progettato per fornire una comprensione pratica di come utilizzare AWS per il cloud computing, Python per la programmazione, e Docker per la gestione dei container. Attraverso un mix di teoria e pratica, miriamo a fornire le competenze necessarie per sfruttare queste potenti tecnologie nel mondo reale.
+Questo corso è progettato per fornire una comprensione pratica di come utilizzare AWS per il cloud computing, Docker per la gestione dei container, Linux per la gestione e amministrazione sui server, Python per la programmazione. Attraverso un mix di teoria e pratica, miriamo a fornire le competenze necessarie per sfruttare queste potenti tecnologie nel mondo reale.
+
+![Gatto](resources/gif/giphyCat.gif)
 
 ## Come Utilizzare Questo Repository
 
-- **AWS**: Nella cartella `/aws`, troverete materiali relativi ad AWS, inclusi tutorial e script di esempio.
-- **Python**: La cartella `/python` contiene esempi di codice, esercizi e progetti per migliorare le vostre abilità di programmazione in Python.
-- **Docker**: Nella cartella `/docker`, troverete guide e script per iniziare con Docker, compresi esempi di containerizzazione di applicazioni.
+## Repository di Esercitazioni
+
+Benvenuti nel repository di esercitazioni! Qui troverete una serie di risorse per l'apprendimento pratico:
+
+- **AWS**: Tutorial,architetture, script e risorse su AWS nella cartella `/aws`.
+  
+- **Docker**: Guide, script e esempi per Docker nella cartella `/docker`.
+  
+- **Linux**: Esempi, esercizi e progetti per migliorare le competenze su Linux nella cartella `/linux`.
+  
+- **Python**: Risorse per l'apprendimento e la pratica di Python nella cartella `/python`.
+
+![Cane](resources/gif/giphyDog.gif)
 
 ## Prerequisiti
 

@@ -1,0 +1,1 @@
+# AWS - Risorse di Studio
