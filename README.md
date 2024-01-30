@@ -4,7 +4,7 @@ Benvenuti nel repository delle risorse di studio per la classe su AWS, Docker, L
 
 ## Informazioni sul Corso
 
-Questo corso è progettato per fornire una comprensione pratica di come utilizzare AWS per il cloud computing, Docker per la gestione dei container, Linux per la gestione e amministrazione sui server, Python per la programmazione. Attraverso un mix di teoria e pratica, miriamo a fornire le competenze necessarie per sfruttare queste potenti tecnologie nel mondo reale.
+Questo corso è progettato per fornire una comprensione pratica di come utilizzare AWS per il cloud computing, Docker per la gestione dei container, Linux per amministrazione server, Python per la programmazione. Attraverso un mix di teoria e pratica, miriamo a fornire le competenze necessarie per sfruttare queste potenti tecnologie nel mondo reale.
 
 ![Gatto](resources/gif/giphyCat.gif)
 
