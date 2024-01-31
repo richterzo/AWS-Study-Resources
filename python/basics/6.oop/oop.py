@@ -13,9 +13,9 @@ class Car:
             model (str): Il modello dell'auto.
             year (int): L'anno di produzione dell'auto.
         """
-        self.make = make
-        self.model = model
-        self.year = year
+        self.make = make  # Incapsulamento: l'attributo make è incapsulato all'interno della classe Car
+        self.model = model  # Incapsulamento: l'attributo model è incapsulato all'interno della classe Car
+        self.year = year  # Incapsulamento: l'attributo year è incapsulato all'interno della classe Car
 
     def accelerate(self):
         """
@@ -37,7 +37,7 @@ class Car:
 
 
 # Definizione della classe ElectricCar
-class ElectricCar(Car):
+class ElectricCar(Car):  # Ereditarietà: ElectricCar eredita dalla classe Car
     """
     Classe che rappresenta un'auto elettrica, ereditata dalla classe Car.
     """
@@ -52,8 +52,8 @@ class ElectricCar(Car):
             year (int): L'anno di produzione dell'auto.
             battery_capacity (float): La capacità della batteria dell'auto elettrica.
         """
-        super().__init__(make, model, year)
-        self.battery_capacity = battery_capacity
+        super().__init__(make, model, year)  # Invocazione del costruttore della classe padre
+        self.battery_capacity = battery_capacity  # Incapsulamento: l'attributo battery_capacity è incapsulato all'interno della classe ElectricCar
 
     def describe_battery(self):
         """
@@ -64,7 +64,7 @@ class ElectricCar(Car):
         """
         return f"The electric car's battery has a capacity of {self.battery_capacity} kWh"
 
-    def accelerate(self):
+    def accelerate(self):  # Polimorfismo: override del metodo accelerate della classe padre Car
         return f"{self.year} {self.make} {self.model} is accelerating rapidly"
 
 # Definizione della classe BankAccount
@@ -81,8 +81,8 @@ class BankAccount:
             account_number (str): Il numero del conto bancario.
             balance (float): Il saldo del conto bancario.
         """
-        self.account_number = account_number
-        self.balance = balance
+        self.account_number = account_number  # Incapsulamento: l'attributo account_number è incapsulato all'interno della classe BankAccount
+        self.balance = balance  # Incapsulamento: l'attributo balance è incapsulato all'interno della classe BankAccount
 
     def deposit(self, amount):
         """
@@ -112,4 +112,4 @@ class BankAccount:
         Returns:
             float: Il saldo attuale del conto.
         """
-        return self.balance
+        return self.balance  # Incapsulamento: il saldo del conto è incapsulato all'interno della classe BankAccount

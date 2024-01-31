@@ -31,8 +31,9 @@ Benvenuti nel repository di esercitazioni! Qui troverete una serie di risorse pe
 ## Risorse Aggiuntive
 
 - [Documentazione ufficiale AWS](https://aws.amazon.com/documentation/)
-- [Tutorial Python](https://www.learnpython.org/)
 - [Guida introduttiva a Docker](https://docs.docker.com/get-started/)
+- [Guida introduttiva a Linux](https://www.linux.it/)
+- [Tutorial Python](https://www.learnpython.org/)
 
 ## Contribuire
 

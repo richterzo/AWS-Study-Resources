@@ -48,6 +48,7 @@ print("Tipo di is_true:", type(is_true))
 
 # È possibile ottenere anche la dimensione occupata in memoria da una variabile usando
 # la funzione `sys.getsizeof()` dal modulo `sys`.
+# la funzione restituisce il numero di byte occupati da quell'oggetto nella memoria.
 import sys
 
 print("Dimensione di x (in byte):", sys.getsizeof(x))
