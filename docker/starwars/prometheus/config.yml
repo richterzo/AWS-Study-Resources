@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 3s
+
+scrape_configs:
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "starwars"
+    static_configs:
+      - targets: ["rebels:5001"]

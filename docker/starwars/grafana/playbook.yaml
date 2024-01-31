@@ -1,0 +1,33 @@
+---
+- hosts: localhost
+  become: yes
+
+  tasks:
+
+    - name: Install gpg
+      apt:
+        name: gnupg,software-properties-common
+        state: present
+        update_cache: yes
+    - name: Add gpg key
+      apt_key:
+        url: "https://packages.grafana.com/gpg.key"
+        validate_certs: no
+    - name: Add repository
+      apt_repository:
+        repo: "deb https://packages.grafana.com/oss/deb stable main"             
+        state: present
+        validate_certs: no
+
+    - name: Install Grafana
+      ### ATTENZIONE ###
+      # Completare il task andando ad inserire l'istruzione per l'installazione di un nuovo pacchetto apt
+      # il nome del pacchetto è 'grafana'
+      # # https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html
+
+    - name: Start service grafana-server
+      systemd:
+        name: grafana-server
+        state: restarted
+        enabled: yes
+        daemon_reload: yes
