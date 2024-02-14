@@ -1,0 +1,13 @@
+version: '3.1'
+
+services:
+  db:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: 1234
+      MARIADB_DATABASE: mariaDB
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
